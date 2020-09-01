@@ -1,8 +1,8 @@
 
-import example from './example';
+import postDesign from './post-desgin';
 
 const packages = [
-  example,
+  postDesign,
 ];
 
 export default packages;
