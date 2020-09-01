@@ -1,0 +1,16 @@
+{
+  // tslint error直接显示error，默认显示成warning
+  "tslint.alwaysShowRuleFailuresAsWarnings": false,
+  "editor.codeActionsOnSave": {
+    // tslint 自动修复
+    "source.fixAll.tslint": true
+  },
+  "editor.formatOnSave": false,
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true
+  },
+  "prettier.configPath": ".prettierrc"
+}
