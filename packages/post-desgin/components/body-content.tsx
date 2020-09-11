@@ -13,10 +13,8 @@ export default class BodyContent extends Vue {
         <div class='h-full'>
           <left-side-menu />
         </div>
-        <div class='flex-grow text-center bg-gray-3' style='min-width:600px'>
-          <div class='h-full' style='padding:60px 180px'>
-            <draw-wrapper />
-          </div>
+        <div class='flex-grow text-center bg-gray-3' style='min-width:600px;padding:60px 160px'>
+          <draw-wrapper />
         </div>
         <div class='full' style='width:300px'>
           <right-side-menu />

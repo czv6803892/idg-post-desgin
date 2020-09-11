@@ -3,10 +3,22 @@ import { Vue, Component } from 'vue-property-decorator';
   depends: [],
 })
 export default class LeftMenuItemImage extends Vue {
+  public imageOptions: any;
   public data() {
-    return {};
+    return {
+      imageOptions: [
+        { key: '', src },
+        { key: '', src },
+        { key: '', src },
+        { key: '', src },
+      ],
+    };
   }
   public render() {
-    return <div>Image</div>;
+    return (
+      <div class='pt-1 flex-wrap'>
+        <div class='w-1/2 h-10 border-solid'>sss</div>
+      </div>
+    );
   }
 }
