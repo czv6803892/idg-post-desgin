@@ -1,6 +1,7 @@
 import { Vue, Component } from 'vue-property-decorator';
 import { Footer, Button, Icon } from '@idg/iview';
 import style from '../styles/post-desgin.module.less';
+import { Log } from '@idg/idg';
 @Component({
   depends: ['component.BodyContent'],
 })
@@ -13,11 +14,26 @@ export default class PageLayOut extends Vue {
       <div class='h-screen'>
         <div class={style.topBar}>
           <div class={style.topBarWrap}>
-            <div class={style.topBarBack}>
+            <div
+              class={style.topBarBack}
+              on={{
+                click: () => {
+                  Log.debug('点击了返回');
+                },
+              }}
+            >
               <Icon type='ios-arrow-back' size={36} />
             </div>
             <div class={style.topBarTitle}>postDesign</div>
-            <Button type='primary' class='mr-4 items-center'>
+            <Button
+              type='primary'
+              class='mr-4 items-center'
+              on={{
+                click: () => {
+                  Log.debug('点击了保存');
+                },
+              }}
+            >
               <Icon type='md-camera' class='mr-2' />保 存
             </Button>
           </div>
